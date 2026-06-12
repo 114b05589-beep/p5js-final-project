@@ -114,3 +114,12 @@ h1 {
 #start-btn:active {
     transform: translateY(1px);
 }
+/* 第二次 Commit 新增：讓按鈕有呼吸微動特效 */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+#start-btn {
+    animation: pulse 2s infinite;
+}
